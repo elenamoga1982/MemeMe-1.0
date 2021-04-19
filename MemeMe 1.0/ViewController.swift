@@ -58,15 +58,15 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         present(imagePicker, animated: true, completion: nil)
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        unsubscribeFromKeyboardNotifications()
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+        super.viewWillAppear(true)
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         subscribeToKeyboardNotifications()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        unsubscribeFromKeyboardNotifications()
     }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -77,13 +77,12 @@ UINavigationControllerDelegate, UITextFieldDelegate {
     
     func prepareView() {
         
-        //Prepare text fields within image view
         self.topTextField.delegate = self
         self.bottomTextField.delegate = self
         self.setTextField(self.topTextField)
         self.setTextField(self.bottomTextField)
         
-        //share button settings
+    
         self.shareButton.isEnabled = true
     }
     
@@ -164,6 +163,10 @@ UINavigationControllerDelegate, UITextFieldDelegate {
         self.present(activityViewController, animated: true, completion: nil)
     }
     
+    
+    @IBAction func cancel(_ sender: Any) {
+        setViewControlsToInitialState()
+    }
     
     func setViewControlsToInitialState() {
         imagePickerView.image = nil
