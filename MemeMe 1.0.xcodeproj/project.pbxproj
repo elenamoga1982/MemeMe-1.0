@@ -14,6 +14,7 @@
 		224EBB862629A247007F8662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224EBB852629A247007F8662 /* Assets.xcassets */; };
 		224EBB892629A247007F8662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224EBB872629A247007F8662 /* LaunchScreen.storyboard */; };
 		224EBB942629A247007F8662 /* MemeMe_1_0Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224EBB932629A247007F8662 /* MemeMe_1_0Tests.swift */; };
+		22A769A8262E130600C3E50A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A769A7262E130600C3E50A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		224EBB8F2629A247007F8662 /* MemeMe 1.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MemeMe 1.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224EBB932629A247007F8662 /* MemeMe_1_0Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemeMe_1_0Tests.swift; sourceTree = "<group>"; };
 		224EBB952629A247007F8662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A769A7262E130600C3E50A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				224EBB7E2629A246007F8662 /* AppDelegate.swift */,
 				224EBB802629A246007F8662 /* ViewController.swift */,
+				22A769A7262E130600C3E50A /* Constants.swift */,
 				224EBB822629A246007F8662 /* Main.storyboard */,
 				224EBB852629A247007F8662 /* Assets.xcassets */,
 				224EBB872629A247007F8662 /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22000CC0262CD404008A58AA /* Meme.swift in Sources */,
+				22A769A8262E130600C3E50A /* Constants.swift in Sources */,
 				224EBB812629A246007F8662 /* ViewController.swift in Sources */,
 				224EBB7F2629A246007F8662 /* AppDelegate.swift in Sources */,
 			);
